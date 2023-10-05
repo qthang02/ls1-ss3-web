@@ -1,0 +1,12 @@
+﻿table.mytable {
+    border-collapse: collapse;
+    border : 3px solid black;
+
+}
+
+tr.mytable{
+    border-top: 2px solid lightgrey;
+    border-bottom : 2px solid lightgrey;
+
+}
+

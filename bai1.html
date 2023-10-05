@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BT1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="b1.js"></script>
+    <link href="b1.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <fieldset style="border:2px solid lightblue">
+        <h1> PHIẾU THAM GIA CLB TIN HỌC <span style="color:aqua">LUBU</span></h1>
+        <form>
+            <table class="mytable" cellpadding="10px" width="500px">
+                <tr class="mytable">
+                    <td>Mã sinh viên: 
+                        <input type="text" id="masv" name="masv" value="" />
+                        <span id="masv_error"></span>
+                    </td>
+                </tr>
+                <tr class="mytable">
+                    <td>Họ và tên :        
+                        <input type="text" id="hoten" name="hoten" value="" />
+                        <span id="hoten_error"></span>
+                    </td>
+                </tr>
+                <tr class="mytable">
+                    <td>Tuổi : 
+                        <input type="number" id="tuoi" name="tuoi" value="" />
+                        <span id="tuoi_error"></span>
+                    </td>
+                </tr>
+                <tr class="mytable">
+                    <td>
+                        Sở thích :
+                        <input type="checkbox" id="ngoaingu1" name="ngoaingu" value="Anh">
+                        <label for="lang1">Anh</label>
+                        <input type="checkbox" id="ngoaingu2" name="ngoaingu" value="Pháp">
+                        <label for="lang2"> Pháp </label>
+                        <input type="checkbox" id="ngoaingu3" name="ngoaingu" value="Nhật">
+                        <label for="lang3"> Nhật </label>
+                        <span style="color: red" id="ngoaingu"></span>
+
+
+
+                    </td>
+                </tr>
+                <tr class="mytable">
+                    <td>
+                        Chuyên ngành :
+                        <select id="chuyennganh" onchange="chuyennganhChanged(this)">
+                            <option value=""> -- Chọn -- </option>
+                            <option value="hethong">Hệ thống</option>
+                            <option value="phanmem"> Phần mềm </option>
+                            <option value="mangmaytinh"> Mạng máy tính  </option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="mytable">
+                    <td>
+                        Sở trường : <p style="color: red" id="show_message"></p>
+
+                    </td>
+                </tr>
+
+                <tr class="mytable">
+                    <td style="text-align:center">
+                        <input type="button" onclick="validate();" id="btn" name="btn" value="Đăng ký" />
+                    </td>
+                </tr>
+
+
+            </table>
+
+        </form>
+    </fieldset>
+
+
+</body>
+</html>
